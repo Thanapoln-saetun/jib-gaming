@@ -1,4 +1,4 @@
-#JIB Gaming - E-commerce Platform
+# JIB Gaming - E-commerce Platform
 
 A modern, responsive e-commerce website for gaming products built with Next.js, TypeScript, and Tailwind CSS.
 
