@@ -29,7 +29,7 @@ A modern, responsive e-commerce website for gaming products built with Next.js, 
 1. **Clone and install**
 
    ```bash
-   git clone https://github.com/your-username/jib-gaming.git
+   git clone https://github.com/Thanapoln-saetun/jib-gaming.git
    cd jib-gaming
    npm install
    ```
