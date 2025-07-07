@@ -1,0 +1,16 @@
+<svg width="127" height="50" viewBox="0 0 127 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="127" height="50" fill="white" rx="4"/>
+  
+  <!-- DBD Text -->
+  <text x="15" y="20" font-family="Arial, sans-serif" font-size="16" fill="#1E40AF" font-weight="bold">DBD</text>
+  
+  <!-- Registered Circle -->
+  <circle cx="70" cy="15" r="12" fill="#1E40AF"/>
+  <text x="70" y="12" font-family="Arial, sans-serif" font-size="6" fill="white" text-anchor="middle">®</text>
+  <text x="70" y="20" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">Registered</text>
+  
+  <!-- Bottom text -->
+  <text x="15" y="35" font-family="Arial, sans-serif" font-size="7" fill="#1E40AF">Department of Business Development</text>
+  <text x="15" y="45" font-family="Arial, sans-serif" font-size="6" fill="#666">Ministry of Commerce</text>
+</svg>

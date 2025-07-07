@@ -1,0 +1,20 @@
+<svg width="48" height="50" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="48" height="50" fill="white" rx="4"/>
+  
+  <!-- Outer border -->
+  <rect x="2" y="2" width="44" height="46" fill="none" stroke="#FF6B35" stroke-width="2" rx="4"/>
+  
+  <!-- Inner shield/certificate shape -->
+  <path d="M24 8L34 12V22C34 30 24 38 24 38C24 38 14 30 14 22V12L24 8Z" fill="#FF6B35"/>
+  
+  <!-- Inner white area -->
+  <path d="M24 12L30 15V22C30 27 24 32 24 32C24 32 18 27 18 22V15L24 12Z" fill="white"/>
+  
+  <!-- Check mark or quality symbol -->
+  <circle cx="24" cy="22" r="4" fill="#FF6B35"/>
+  <path d="M22 22L23 23L26 20" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Text at bottom -->
+  <text x="24" y="46" font-family="Arial, sans-serif" font-size="5" fill="#FF6B35" text-anchor="middle" font-weight="bold">CERTIFIED</text>
+</svg>

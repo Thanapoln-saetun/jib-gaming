@@ -1,0 +1,30 @@
+Brand Logo Mapping
+==================
+
+Slide 1 Logos:
+slide1_msi.png -> http://localhost:3845/assets/715221ef4db49121437f09938a6f4c7e4642f9c2.png
+slide1_asus.png -> http://localhost:3845/assets/38e61a52df5976a873489ebaed34681f4e065850.png
+slide1_intel.png -> http://localhost:3845/assets/0d9a4ecb5c89bafdb8edf464c0c4185d81ac8c4b.png
+slide1_apple.png -> http://localhost:3845/assets/59f147d28dd9ee1f7bd4192c5438d72dca30038b.png
+slide1_amd.png -> http://localhost:3845/assets/c1ef7bf782eaac61a114831badf84bd17f665b75.png
+slide1_lenovo.png -> http://localhost:3845/assets/a6e4b94a0f7acbd30fa6168f8f3a1e25cd56e237.png
+slide1_steelseries.png -> http://localhost:3845/assets/f517ef70ee52c4d29d6c90a1d76706df19398d2e.png
+slide1_corsair.png -> http://localhost:3845/assets/b8e07a0fddb071bc3627b203f1de338b902ee25f.png
+slide1_hyperx.png -> http://localhost:3845/assets/ab747e6c9160324ecc20ef7045f32fd69b06bc8d.png
+slide1_razer.png -> http://localhost:3845/assets/5b4b800d2ee7e73c09430a8c31891c7608447f40.png
+slide1_logitech.png -> http://localhost:3845/assets/ba26a7e4b13d6a84e0422d9d6befaee1bcacaef0.png
+slide1_gigabyte.png -> http://localhost:3845/assets/31d280275fbec0075da7f827ff3a9ed4ebce8c89.png
+
+Slide 2 Logos:
+slide2_deepcool.png -> http://localhost:3845/assets/8275fd679f3cae1e862229ae8cc1c44df35b545c.png
+slide2_seagate.png -> http://localhost:3845/assets/8903fcb863b9c9ef3452b535ff81c92492a33e70.png
+slide2_epson.png -> http://localhost:3845/assets/d5b9bf621344ff8ef4029dbdaade0117ed91d673.png
+slide2_cougar.png -> http://localhost:3845/assets/8fe224e742004d66cfcffc56fa6a2e64aa3b1602.png
+slide2_wd.png -> http://localhost:3845/assets/ebb7a8c992487ab0a7cea51c86ce4a60e85161f0.png
+slide2_razer2.png -> http://localhost:3845/assets/3d50d5eae95e5d5e27f601e88c9fbee3d4d44921.png
+slide2_brand7.png -> http://localhost:3845/assets/a7f57c5d5f86579a88b7b385bb433c56a3236713.png
+slide2_brand8.png -> http://localhost:3845/assets/a14b874a237af7e4d54f0c0b647328becce55a21.png
+slide2_brand9.png -> http://localhost:3845/assets/371d278518f81a23b6e87e00b8fac12548faeeca.png
+slide2_brand10.png -> http://localhost:3845/assets/8e9c4e99ac7391b225d8cd53143ec0f232040172.png
+slide2_brand11.png -> http://localhost:3845/assets/ec368392d5a95f986e90a4dcba5090f3a8b7b640.png
+slide2_brand12.png -> http://localhost:3845/assets/c61e5fa1e9c538c8edf28119aabfff35aca51cb0.png
