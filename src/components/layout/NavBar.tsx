@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import MenuOverlay from '../sections/MenuOverlay'
 import SearchBar from '../sections/SearchBar'
 
@@ -27,33 +28,33 @@ export default function NavBar() {
 
     return (
         <>
-            <div className="self-stretch h-14 px-6 backdrop-blur-[10px] inline-flex justify-between items-center relative scale-optimized auto-scale-content" style={{ background: 'linear-gradient(to left, #221692, #1A1354)', zIndex: 10 }}>
-                <div className="w-40 h-6 inline-flex flex-col justify-between items-start">
+            <div className="w-full h-14 px-6 backdrop-blur-[10px] flex justify-between items-center relative" style={{ background: 'linear-gradient(to left, #221692, #1A1354)', zIndex: 10 }}>
+                <div className="w-40 h-6 flex flex-col justify-between items-start">
                     <button
                         className="w-7 h-5 cursor-pointer hover:opacity-80 transition-opacity"
                         aria-label="เมนู"
                         onClick={toggleMenu}
                     >
-                        <img alt="Menu" className="w-full h-full" src={imgIconMenu} />
+                        <Image alt="Menu" className="w-full h-full" src={imgIconMenu} width={28} height={20} />
                     </button>
                 </div>
 
                 <div className="flex justify-start items-center gap-2.5 relative" style={{ overflow: 'visible' }}>
-                    <img className="w-14 h-10" src={imgLogo} alt="JIB หน้าหลัก" />
+                    <Image className="w-14 h-10" src={imgLogo} alt="JIB หน้าหลัก" width={56} height={40} />
 
                     <SearchBar onSearch={handleSearch} />
 
                     <div className="h-10 pl-6 relative flex justify-center items-center gap-6">
                         <button className="self-stretch flex justify-start items-center gap-2 hover:opacity-80 transition-opacity" aria-label="รายการโปรด">
-                            <img alt="Favorites" className="w-6 h-5" src={imgHeartIcon} />
+                            <Image alt="Favorites" className="w-6 h-5" src={imgHeartIcon} width={24} height={20} />
                         </button>
 
                         <button className="self-stretch flex justify-start items-center gap-2 hover:opacity-80 transition-opacity" aria-label="ตะกร้าสินค้า">
-                            <img alt="Cart" className="w-6 h-6" src={imgCartIcon} />
+                            <Image alt="Cart" className="w-6 h-6" src={imgCartIcon} width={24} height={24} />
                         </button>
 
                         <button className="self-stretch flex justify-start items-center gap-2 hover:opacity-80 transition-opacity" aria-label="บัญชีผู้ใช้">
-                            <img alt="Account" className="w-6 h-6" src={imgUserIcon} />
+                            <Image alt="Account" className="w-6 h-6" src={imgUserIcon} width={24} height={24} />
                         </button>
 
                         {favoriteCount > 0 && (
