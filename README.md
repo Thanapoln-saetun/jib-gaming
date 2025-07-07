@@ -65,3 +65,12 @@ jib-gaming/
 └── ...config files
 ```
 
+
+## Example JIB Gaming - E-commerce Platform
+![jib-gaming](https://github.com/user-attachments/assets/bbafc2da-beab-49e4-8ab4-dfeba0304a73)
+
+
+
+
+
+
