@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-
+import Image from 'next/image'
 
 const heroBackground1 = "/assets/images/hero-background-1.png";
 const heroBackground2 = "/assets/images/hero-background-2.png";
@@ -68,12 +68,18 @@ export default function Header() {
                     {slides.map((slide, index) => (
                         <div
                             key={index}
-                            className={`absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
                                 }`}
-                            style={{
-                                backgroundImage: `url('${slide}')`,
-                            }}
-                        />
+                        >
+                            <Image
+                                src={slide}
+                                alt={`Hero background ${index + 1}`}
+                                fill
+                                sizes="100vw"
+                                className="object-cover object-center"
+                                priority={index === 0}
+                            />
+                        </div>
                     ))}
                 </div>
 
@@ -96,12 +102,15 @@ export default function Header() {
                     </div>
 
                     {/* Logo */}
-                    <div
-                        className="w-[60px] xs:w-[70px] sm:w-[80px] md:w-[90px] lg:w-[102px] h-[27px] xs:h-[32px] sm:h-[36px] md:h-[41px] lg:h-[46px] bg-cover bg-left mb-2 sm:mb-3 md:mb-4"
-                        style={{
-                            backgroundImage: `url('${imgLogo}')`,
-                        }}
-                    />
+                    <div className="relative w-[60px] xs:w-[70px] sm:w-[80px] md:w-[90px] lg:w-[102px] h-[27px] xs:h-[32px] sm:h-[36px] md:h-[41px] lg:h-[46px] mb-2 sm:mb-3 md:mb-4">
+                        <Image
+                            src={imgLogo}
+                            alt="Logo"
+                            fill
+                            sizes="(max-width: 475px) 60px, (max-width: 639px) 70px, (max-width: 767px) 80px, (max-width: 1023px) 90px, 102px"
+                            className="object-cover object-left"
+                        />
+                    </div>
 
                     {/* Title */}
                     <div className="text-white mb-3 xs:mb-4 sm:mb-6 md:mb-8">
@@ -176,16 +185,15 @@ export default function Header() {
                     <div className="relative mb-3 xs:mb-4 sm:mb-6 md:mb-8 w-full">
                         <div className="w-full h-[4px] xs:h-[5px] sm:h-[6px] md:h-[7px] lg:h-[9px] bg-white/50 rounded-[6px]" />
                         <div className="absolute top-0 left-0 w-[80px] xs:w-[100px] sm:w-[120px] md:w-[150px] lg:w-[183px] h-[4px] xs:h-[5px] sm:h-[6px] md:h-[7px] lg:h-[9px] bg-gradient-to-r from-[#ed1c24] to-[#a61fdf] rounded-[6px]" />
-                        <div
-                            className="absolute bg-cover bg-center animate-progress-icon lg:block hidden"
-                            style={{
-                                backgroundImage: `url('${imgAnimation}')`,
-                                width: '32px',
-                                height: '44px',
-                                left: '167px',
-                                top: '-30px',
-                            }}
-                        />
+                        <div className="absolute hidden lg:block" style={{ left: '167px', top: '-30px' }}>
+                            <Image
+                                src={imgAnimation}
+                                alt="Animation"
+                                width={32}
+                                height={44}
+                                className="animate-progress-icon"
+                            />
+                        </div>
                     </div>
 
                     {/* Contact Section */}
@@ -194,11 +202,11 @@ export default function Header() {
                             ต้องการติดต่อเรา
                         </div>
                         <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2">
-                            <img src={imgFacebook} alt="Facebook" className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
-                            <img src={imgSocialMedia1} alt="Social Media" className="w-[9px] xs:w-[11px] sm:w-[13px] md:w-[15px] lg:w-[17px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px] lg:h-[15px]" />
-                            <img src={imgLine} alt="Line" className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
-                            <img src={imgTiktok} alt="TikTok" className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
-                            <img src={imgMessenger} alt="Messenger" className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
+                            <Image src={imgFacebook} alt="Facebook" width={14} height={14} className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
+                            <Image src={imgSocialMedia1} alt="Instagram" width={17} height={15} className="w-[9px] xs:w-[11px] sm:w-[13px] md:w-[15px] lg:w-[17px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px] lg:h-[15px]" />
+                            <Image src={imgLine} alt="Line" width={14} height={14} className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
+                            <Image src={imgTiktok} alt="TikTok" width={14} height={14} className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
+                            <Image src={imgMessenger} alt="Messenger" width={14} height={14} className="w-[8px] xs:w-[10px] sm:w-[12px] md:w-[14px] h-[8px] xs:h-[10px] sm:h-[12px] md:h-[14px]" />
                         </div>
                     </div>
                 </div>
