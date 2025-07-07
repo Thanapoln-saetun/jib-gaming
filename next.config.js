@@ -5,20 +5,6 @@ const nextConfig = {
     dangerouslyAllowSVG: true, // Allow SVG images
     contentDispositionType: 'attachment', // Force browser to download SVG
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;", // Prevent scripts in SVG
-    localPatterns: [
-      {
-        pathname: '/assets/images/**',
-        search: '',
-      },
-      {
-        pathname: '/assets/icons/**',
-        search: '',
-      },
-      {
-        pathname: '/assets/brands/**',
-        search: '',
-      },
-    ],
     remotePatterns: [
       {
         protocol: 'https',
