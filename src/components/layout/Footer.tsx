@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function Footer() {
     return (
         <footer className="w-full">
@@ -10,10 +12,12 @@ export default function Footer() {
                         {/* Warranty Feature */}
                         <div className="flex items-center gap-4">
                             <div className="w-10 h-10 flex items-center justify-center">
-                                <img
+                                <Image
                                     src="/assets/images/service-bar/warranty.png"
                                     alt="การรับประกัน"
                                     className="w-8 h-8 object-contain"
+                                    width={32}
+                                    height={32}
                                 />
                             </div>
                             <div className="text-sm font-semibold text-[#221692]">
@@ -25,10 +29,12 @@ export default function Footer() {
                         {/* Free Shipping Feature */}
                         <div className="flex items-center gap-4">
                             <div className="w-10 h-10 flex items-center justify-center">
-                                <img
+                                <Image
                                     src="/assets/images/service-bar/shipping.png"
                                     alt="จัดส่งฟรี"
                                     className="w-10 h-8 object-contain"
+                                    width={40}
+                                    height={32}
                                 />
                             </div>
                             <div className="text-sm font-semibold text-[#221692]">
@@ -41,10 +47,12 @@ export default function Footer() {
                         {/* Express Delivery Feature */}
                         <div className="flex items-center gap-4">
                             <div className="w-16 h-8 flex items-center justify-center">
-                                <img
+                                <Image
                                     src="/assets/images/service-bar/delivery.png"
                                     alt="จัดส่งด่วน"
                                     className="w-14 h-8 object-contain"
+                                    width={56}
+                                    height={32}
                                 />
                             </div>
                             <div className="text-sm font-semibold text-[#221692]">
@@ -57,10 +65,12 @@ export default function Footer() {
                         {/* Payment Feature */}
                         <div className="flex items-center gap-4">
                             <div className="w-15 h-10 flex items-center justify-center">
-                                <img
+                                <Image
                                     src="/assets/images/service-bar/payment.png"
                                     alt="ช่องทางการชำระเงิน"
                                     className="w-[54px] h-8 object-contain"
+                                    width={54}
+                                    height={32}
                                 />
                             </div>
                             <div className="text-sm font-semibold text-[#221692]">
@@ -98,10 +108,10 @@ export default function Footer() {
                                     <h3 className="text-white text-base font-semibold">เครื่องหมายรับรอง</h3>
                                     <div className="flex gap-4">
                                         <div className="w-12 h-[50px]  rounded flex items-center justify-center">
-                                            <img src="/assets/images/CERT.png" alt="Quality Certificate" className="w-full h-full" />
+                                            <Image src="/assets/images/CERT.png" alt="Quality Certificate" className="w-full h-full" width={48} height={50} />
                                         </div>
                                         <div className="w-[127px] h-[50px]  rounded flex items-center justify-center">
-                                            <img src="/assets/images/BNS_REGISTERED.png" alt="DBD Registered" className="w-full h-full" />
+                                            <Image src="/assets/images/BNS_REGISTERED.png" alt="DBD Registered" className="w-full h-full" width={127} height={50} />
                                         </div>
                                     </div>
                                 </div>
@@ -164,10 +174,12 @@ export default function Footer() {
                             <div className="flex flex-col items-center">
                                 <h4 className="text-white text-base font-semibold">จัดส่งสินค้าโดย</h4>
                                 <div className="w-[280px] h-[113px] flex items-center justify-center">
-                                    <img
+                                    <Image
                                         src="/assets/images/delivery/ft-delivery.png"
                                         alt="จัดส่งสินค้าโดย Kerry, Teleport, DHL"
                                         className="max-w-full max-h-full object-contain"
+                                        width={280}
+                                        height={113}
                                     />
                                 </div>
                             </div>
@@ -176,10 +188,12 @@ export default function Footer() {
                             <div className="flex flex-col items-center">
                                 <h4 className="text-white text-base font-semibold">ช่องทางการชำระ</h4>
                                 <div className="w-[452px] h-[100px] flex items-center justify-center">
-                                    <img
+                                    <Image
                                         src="/assets/images/payment/ft-payment.png"
                                         alt="ช่องทางการชำระ Visa, Mastercard และธนาคารต่างๆ"
                                         className="max-w-full max-h-full object-contain"
+                                        width={452}
+                                        height={100}
                                     />
                                 </div>
                             </div>
@@ -188,12 +202,12 @@ export default function Footer() {
                             <div className="flex flex-col items-center">
                                 <h4 className="text-white text-base font-semibold">ช่องทางการติดตาม</h4>
                                 <div className="flex gap-4 py-6">
-                                    <img src="/assets/icons/social/facebook.png" alt="Facebook" className="w-8 h-8" />
-                                    <img src="/assets/icons/social/messenger.png" alt="Messenger" className="w-8 h-8" />
-                                    <img src="/assets/icons/social/instagram.png" alt="Instagram" className="w-8 h-8" />
-                                    <img src="/assets/icons/social/line.png" alt="Line" className="w-8 h-8" />
-                                    <img src="/assets/icons/social/youtube.png" alt="YouTube" className="w-8 h-8" />
-                                    <img src="/assets/icons/social/tiktok.png" alt="TikTok" className="w-8 h-8" />
+                                    <Image src="/assets/icons/social/facebook.png" alt="Facebook" className="w-8 h-8" width={32} height={32} />
+                                    <Image src="/assets/icons/social/messenger.png" alt="Messenger" className="w-8 h-8" width={32} height={32} />
+                                    <Image src="/assets/icons/social/instagram.png" alt="Instagram" className="w-8 h-8" width={32} height={32} />
+                                    <Image src="/assets/icons/social/line.png" alt="Line" className="w-8 h-8" width={32} height={32} />
+                                    <Image src="/assets/icons/social/youtube.png" alt="YouTube" className="w-8 h-8" width={32} height={32} />
+                                    <Image src="/assets/icons/social/tiktok.png" alt="TikTok" className="w-8 h-8" width={32} height={32} />
                                 </div>
                             </div>
                         </div>

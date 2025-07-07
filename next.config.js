@@ -1,16 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true, // Add this back for Vercel deployment compatibility
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '**',
       },
+      {
+        protocol: 'http',
+        hostname: '**',
+      },
     ],
-    // Remove unoptimized: true to allow proper image optimization
-    // Remove localhost-only domains to allow production deployment
+    // Enable static image optimization
+    domains: [], // Keep empty for local images
   },
-  // Add static asset optimization
+  // Static asset optimization
   experimental: {
     optimizePackageImports: ['@heroicons/react']
   }
